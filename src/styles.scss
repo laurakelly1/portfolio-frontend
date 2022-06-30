@@ -1,3 +1,112 @@
 .App {
-    text-align: center;
+  text-align: center;
+}
+$light-orange: #e0ac9d;
+$dark-orange: #de8f6e;
+$light-green: #73877b;
+$dark-green: #596567;
+$almost-black: #182021;
+
+@mixin page-size {
+  width: 100vw;
+  height: 100vh;
+}
+@mixin nav-bars {
+  display: block;
+  flex-grow: 1;
+  width: 4rem;
+  text-decoration: none;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  text-align: start;
+}
+
+.main {
+  display: flex;
+  .sidebar-left {
+    display: flex;
+  }
+  .sidebar-right {
+    display: flex;
+  }
+  .home-nav {
+    background-color: $light-orange;
+    @include nav-bars;
+  }
+  .about-nav {
+    background-color: $dark-orange;
+    @include nav-bars;
+  }
+  .project-nav {
+    background-color: $light-green;
+    @include nav-bars;
+  }
+  .skills-nav {
+    background-color: $dark-green;
+    @include nav-bars;
+  }
+  .contact-nav {
+    background-color: $almost-black;
+    @include nav-bars;
+  }
+}
+
+.home-page {
+  background-color: $light-orange;
+  flex-grow: 2;
+  @include page-size;
+  .sidebar-left {
+    flex-grow: 1;
+  }
+  .sidebar-right {
+    flex-grow: 1;
+  }
+}
+
+.about-page {
+  background-color: $dark-orange;
+  flex-grow: 2;
+  @include page-size;
+  .sidebar-left {
+    flex-grow: 1;
+  }
+  .sidebar-right {
+    flex-grow: 1;
+  }
+}
+.projects-page {
+  background-color: $light-green;
+  color: white;
+  flex-grow: 2;
+  @include page-size;
+  .sidebar-left {
+    flex-grow: 1;
+  }
+  .sidebar-right {
+    flex-grow: 1;
+  }
+}
+.skills-page {
+  background-color: $dark-green;
+  color: white;
+  flex-grow: 2;
+  @include page-size;
+  .sidebar-left {
+    flex-grow: 1;
+  }
+  .sidebar-right {
+    flex-grow: 1;
+  }
+}
+.contact-page {
+  background-color: $almost-black;
+  color: white;
+  flex-grow: 2;
+  @include page-size;
+  .sidebar-left {
+    flex-grow: 1;
+  }
+  .sidebar-right {
+    flex-grow: 1;
+  }
 }

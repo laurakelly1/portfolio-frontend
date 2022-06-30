@@ -4,17 +4,17 @@ const About = () => {
   return (
     <div className="main">
         <div className="sidebar-left">
-        <Link to="/">Home</Link>
+        <Link to="/" className="home-nav">Home</Link>
       </div>
-      <div className="main-page">
+      <div className="about-page">
         <h2>About</h2>
         <p>Text about me</p>
       </div>
       <div className="sidebar-right">
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/about" className="about-nav">About</Link>
+        <Link to="/projects" className="project-nav">Projects</Link>
+        <Link to="/skills" className="skills-nav">Skills</Link>
+        <Link to="/contact" className="contact-nav">Contact</Link>
       </div>
     </div>
   );

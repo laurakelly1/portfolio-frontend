@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="main">
-      <div className="main-page">
+      <div className="home-page">
         <div className="home-top">
           <h4>Location</h4>
           <h4>Keywords</h4>
@@ -16,11 +16,11 @@ const Home = () => {
         </div>
       </div>
       <div className="sidebar-right">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/skills">Skills</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/" className="home-nav">Home</Link>
+        <Link to="/about" className="about-nav">About</Link>
+        <Link to="/projects" className="project-nav">Projects</Link>
+        <Link to="/skills" className="skills-nav">Skills</Link>
+        <Link to="/contact" className="contact-nav">Contact</Link>
       </div>
     </div>
   );
