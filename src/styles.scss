@@ -1,8 +1,6 @@
-.App {
-  text-align: center;
-}
+// Colors
 $light-orange: #e0ac9d;
-$dark-orange: #de8f6e;
+$dark-orange: #cf8c70;
 $light-green: #73877b;
 $dark-green: #596567;
 $almost-black: #182021;
@@ -19,6 +17,20 @@ $almost-black: #182021;
   text-orientation: mixed;
   writing-mode: vertical-rl;
   text-align: start;
+  color: white;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+@keyframes change-page {
+
+}
+
+
+
+.App {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 .main {
@@ -36,18 +48,22 @@ $almost-black: #182021;
   .about-nav {
     background-color: $dark-orange;
     @include nav-bars;
+    padding-top: 21vh;
   }
   .project-nav {
     background-color: $light-green;
     @include nav-bars;
+    text-align: center;
   }
   .skills-nav {
     background-color: $dark-green;
     @include nav-bars;
+    padding-top: 70vh;
   }
   .contact-nav {
     background-color: $almost-black;
     @include nav-bars;
+    text-align: end;
   }
 }
 
@@ -55,11 +71,36 @@ $almost-black: #182021;
   background-color: $light-orange;
   flex-grow: 2;
   @include page-size;
-  .sidebar-left {
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  .home-top {
+    display: flex;
+    justify-content: space-around;
   }
-  .sidebar-right {
-    flex-grow: 1;
+  .home-center {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10%;
+    .heading1 {
+      text-align: left;
+      font-size: 80px;
+      margin: 0 5px;
+    }
+    .title-lower {
+      display: flex;
+      justify-content: space-between;
+      .heading2 {
+        text-align: right;
+        font-size: 80px;
+        margin: 0 5px;
+      }
+      .quote {
+        font-size: 15px;
+        margin: 50px;
+      }
+    }
   }
 }
 
@@ -67,46 +108,22 @@ $almost-black: #182021;
   background-color: $dark-orange;
   flex-grow: 2;
   @include page-size;
-  .sidebar-left {
-    flex-grow: 1;
-  }
-  .sidebar-right {
-    flex-grow: 1;
-  }
 }
 .projects-page {
   background-color: $light-green;
   color: white;
   flex-grow: 2;
   @include page-size;
-  .sidebar-left {
-    flex-grow: 1;
-  }
-  .sidebar-right {
-    flex-grow: 1;
-  }
 }
 .skills-page {
   background-color: $dark-green;
   color: white;
   flex-grow: 2;
   @include page-size;
-  .sidebar-left {
-    flex-grow: 1;
-  }
-  .sidebar-right {
-    flex-grow: 1;
-  }
 }
 .contact-page {
   background-color: $almost-black;
   color: white;
   flex-grow: 2;
   @include page-size;
-  .sidebar-left {
-    flex-grow: 1;
-  }
-  .sidebar-right {
-    flex-grow: 1;
-  }
 }
