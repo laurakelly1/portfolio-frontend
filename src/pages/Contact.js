@@ -2,11 +2,26 @@ import { Link } from "react-router-dom";
 import { motion } from 'framer-motion';
 
 const Contact = () => {
+    const containerVariants = {
+        hidden: {
+            ocapcity: 0,
+            x: '-100vw'
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+        },
+        exit: {
+            x: '-100vw',
+            transition: { ease: 'easeInOut'}
+        }
+    }
   return (
     <motion.div className="main"
-    initial={{ width:0 }}
-    animate={{ width:'100%', transition:{duration: 1, delay:0}}}
-    exit={{width:0, transition:{duration: 1, delay:0}}}>
+    variants = {containerVariants}
+    initial='hidden'
+    animate='visible'
+    exit='exit'>
       <div className="sidebar-left">
         <Link to="/" className="home-nav">
           Home

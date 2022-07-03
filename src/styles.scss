@@ -26,11 +26,14 @@ $almost-black: #182021;
 
 }
 
-
+body{
+    background-color: $almost-black;
+}
 
 .App {
   text-align: center;
   font-family: 'Lato', sans-serif;
+
 }
 
 .main {
