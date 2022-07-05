@@ -1,5 +1,5 @@
 // Colors
-$light-orange: snow;
+$main-background: snow;
 $dark-orange: #cf8c70;
 $light-green: #73877b;
 $dark-green: #596567;
@@ -12,34 +12,47 @@ $almost-black: #182021;
 @mixin nav-bars {
   display: block;
   flex-grow: 1;
-  width: 4rem;
   text-decoration: none;
-  text-orientation: mixed;
   writing-mode: vertical-rl;
-  text-align: start;
   color: white;
-  padding: 10px 0;
   text-transform: uppercase;
 }
 
-body{
-    background-color: $almost-black;
+body {
+  background-color: $main-background;
 }
 
 .App {
   text-align: center;
-  font-family: 'Lato', sans-serif;
-
+  font-family: "Lato", sans-serif;
+  h2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 200;
+  }
 }
+
 .header {
   color: white;
-  a {
-    @include nav-bars;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: $almost-black;
+  height: 100vh;
+  
+  .navbar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0 5px;
+    a {
+      @include nav-bars;
+      padding: 10px;
+    }
   }
 }
 
 .home-page {
-  background-color: $light-orange;
+  background-color: $main-background;
   flex-grow: 2;
   @include page-size;
   display: flex;
@@ -47,25 +60,22 @@ body{
 }
 
 .about-page {
-  background-color: $dark-orange;
+  background-color: $main-background;
   flex-grow: 2;
   @include page-size;
 }
 .projects-page {
-  background-color: $light-green;
-  color: white;
+  background-color: $main-background;
   flex-grow: 2;
   @include page-size;
 }
 .skills-page {
-  background-color: $dark-green;
-  color: white;
+  background-color:$main-background;
   flex-grow: 2;
   @include page-size;
 }
 .contact-page {
-  background-color: $almost-black;
-  color: white;
+  background-color: $main-background;
   flex-grow: 2;
   @include page-size;
 }

@@ -2,7 +2,6 @@ import { HashLink as Link} from "react-router-hash-link";
 const Header = () => {
   return (
     <div className="header">
-      <h4>Laura Kelly</h4>
       <div className="navbar">
         <Link to="#home" smooth>Home</Link>
         <Link to="#about" smooth>About</Link>
