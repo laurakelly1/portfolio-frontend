@@ -1,10 +1,10 @@
 const Home = () => {
   return (
     <div className="main">
-      <div className="home-page">
+      <div className="home-page" id='home'>
         HOME
       </div>
-      <div className="about-page">
+      <div className="about-page" id='about'>
         <h2>About</h2>
         <img
           src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/profile_pic.JPG?raw=true"
@@ -21,20 +21,20 @@ const Home = () => {
           transfer my design skills to this new medium.
         </p>
       </div>
-      <div className="projects-page">
+      <div className="projects-page" id='projects'>
         <h2>Projects</h2>
         <p>Project 1</p>
         <p>Project 2</p>
         <p>Project 3</p>
         <p>Project 4</p>
       </div>
-      <div className="skills-page">
+      <div className="skills-page" id='skills'>
         <h2>Skills</h2>
         <p>Languages</p>
         <p>Stylesheets</p>
         <p>Soft skills</p>
       </div>
-      <div className="contact-page">
+      <div className="contact-page" id='contact'>
         <h2>Contact</h2>
         <p>Email</p>
         <p>GitHub</p>
