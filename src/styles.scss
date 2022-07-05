@@ -1,5 +1,5 @@
 // Colors
-$light-orange: #e0ac9d;
+$light-orange: snow;
 $dark-orange: #cf8c70;
 $light-green: #73877b;
 $dark-green: #596567;
@@ -31,38 +31,10 @@ body{
   font-family: 'Lato', sans-serif;
 
 }
-
-.main {
-  display: flex;
-  .sidebar-left {
-    display: flex;
-  }
-  .sidebar-right {
-    display: flex;
-  }
-  .home-nav {
-    background-color: $light-orange;
+.header {
+  color: white;
+  a {
     @include nav-bars;
-  }
-  .about-nav {
-    background-color: $dark-orange;
-    @include nav-bars;
-    padding-top: 21vh;
-  }
-  .project-nav {
-    background-color: $light-green;
-    @include nav-bars;
-    text-align: center;
-  }
-  .skills-nav {
-    background-color: $dark-green;
-    @include nav-bars;
-    padding-top: 70vh;
-  }
-  .contact-nav {
-    background-color: $almost-black;
-    @include nav-bars;
-    text-align: end;
   }
 }
 
@@ -72,35 +44,6 @@ body{
   @include page-size;
   display: flex;
   flex-direction: column;
-  .home-top {
-    display: flex;
-    justify-content: space-around;
-  }
-  .home-center {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10%;
-    .heading1 {
-      text-align: left;
-      font-size: 80px;
-      margin: 0 5px;
-    }
-    .title-lower {
-      display: flex;
-      justify-content: space-between;
-      .heading2 {
-        text-align: right;
-        font-size: 80px;
-        margin: 0 5px;
-      }
-      .quote {
-        font-size: 15px;
-        margin: 50px;
-      }
-    }
-  }
 }
 
 .about-page {

@@ -1,67 +1,46 @@
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-
 const Home = () => {
-    const containerVariants = {
-        hidden: {
-            ocapcity: 0,
-            x: '-100vw'
-        },
-        visible: {
-            opacity: 1,
-            x: 0,
-        },
-        exit: {
-            x: '-100vw',
-            transition: { ease: 'easeInOut'}
-        }
-    }
   return (
-    <motion.div className="main"
-    variants = {containerVariants}
-    initial='hidden'
-    animate='visible'
-    exit='exit'>
+    <div className="main">
       <div className="home-page">
-        <div className="home-top">
-          <h4>Norfolk, Virginia</h4>
-          <h4>Keywords</h4>
-          <h4>Smiley Face</h4>
-        </div>
-        <div className="home-center">
-          <div className="title-upper">
-            <h2 className="heading1">CREATIVE</h2>
-            <h2 className="heading1">DEVELOPER</h2>
-          </div>
-          <div className="title-lower">
-            <h3 className="quote">
-              'tiny little quote about me to draw you in'
-            </h3>
-            <div>
-              <h2 className="heading2">LAURA</h2>
-              <h2 className="heading2">KELLY</h2>
-            </div>
-          </div>
-        </div>
+        HOME
       </div>
-      <div className="sidebar-right">
-        <Link to="/" className="home-nav">
-          Home
-        </Link>
-        <Link to="/about" className="about-nav">
-          About
-        </Link>
-        <Link to="/projects" className="project-nav">
-          Projects
-        </Link>
-        <Link to="/skills" className="skills-nav">
-          Skills
-        </Link>
-        <Link to="/contact" className="contact-nav">
-          Contact
-        </Link>
+      <div className="about-page">
+        <h2>About</h2>
+        <img
+          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/profile_pic.JPG?raw=true"
+          alt="portrait laura kelly"
+        />
+        <p>
+          Hello! My name is Laura. I recently completed a coding boot camp where
+          I spent time learning skills necessary for software engineering. I
+          enjoyed the fast-paced learning environment and the opportunity to
+          spend time creating content that interests me. My formal training is
+          in Pure Mathematics, and prior to this career change I was a
+          mathematics publisher. My love of math drew me to a career in coding
+          due to the logical problem-solving aspects. I also am excited to
+          transfer my design skills to this new medium.
+        </p>
       </div>
-    </motion.div>
+      <div className="projects-page">
+        <h2>Projects</h2>
+        <p>Project 1</p>
+        <p>Project 2</p>
+        <p>Project 3</p>
+        <p>Project 4</p>
+      </div>
+      <div className="skills-page">
+        <h2>Skills</h2>
+        <p>Languages</p>
+        <p>Stylesheets</p>
+        <p>Soft skills</p>
+      </div>
+      <div className="contact-page">
+        <h2>Contact</h2>
+        <p>Email</p>
+        <p>GitHub</p>
+        <p>LinkedIn</p>
+      </div>
+    </div>
   );
 };
 
