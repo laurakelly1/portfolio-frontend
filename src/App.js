@@ -1,11 +1,11 @@
 import "./styles.scss";
 import Main from "./components/Main";
-import Header from "./components/Header";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Nav/>
       <Main/>
     </div>
   );

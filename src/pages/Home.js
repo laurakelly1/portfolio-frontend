@@ -2,10 +2,10 @@ const Home = () => {
   return (
     <div className="main">
       <div className="home-page" id='home'>
-      <h2>Home</h2>
+      <h2 className="page-heading">Home</h2>
       </div>
       <div className="about-page" id='about'>
-        <h2>About</h2>
+        <h2 className="page-heading">About</h2>
         <img
           src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/profile_pic.JPG?raw=true"
           alt="portrait laura kelly"
@@ -22,20 +22,20 @@ const Home = () => {
         </p>
       </div>
       <div className="projects-page" id='projects'>
-        <h2>Projects</h2>
+        <h2 className="page-heading">Projects</h2>
         <p>Project 1</p>
         <p>Project 2</p>
         <p>Project 3</p>
         <p>Project 4</p>
       </div>
       <div className="skills-page" id='skills'>
-        <h2>Skills</h2>
+        <h2 className="page-heading">Skills</h2>
         <p>Languages</p>
         <p>Stylesheets</p>
         <p>Soft skills</p>
       </div>
       <div className="contact-page" id='contact'>
-        <h2>Contact</h2>
+        <h2 className="page-heading">Contact</h2>
         <p>Email</p>
         <p>GitHub</p>
         <p>LinkedIn</p>

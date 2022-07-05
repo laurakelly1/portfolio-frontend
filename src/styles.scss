@@ -8,12 +8,15 @@ $almost-black: #182021;
 @mixin page-size {
   width: 100vw;
   height: 100vh;
+  .page-heading {
+    padding-top: 50px;
+  }
 }
 @mixin nav-bars {
   display: block;
   flex-grow: 1;
   text-decoration: none;
-  writing-mode: vertical-rl;
+  // writing-mode: vertical-rl;
   color: white;
   text-transform: uppercase;
 }
@@ -30,19 +33,26 @@ body {
     font-weight: 200;
   }
 }
-
 .header {
+  background-color: $almost-black;
+  position: fixed;
+  width: 100vw;
+  h1 {
+    color: white;
+    margin: 0;
+  }
+}
+.nav {
   color: white;
   position: fixed;
   right: 0;
   top: 0;
   background-color: $almost-black;
-  height: 100vh;
-  
+  width: 100vw;
   .navbar {
-    height: 100vh;
+    // height: 100vh;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     margin: 0 15px 0 5px;
     a {
       @include nav-bars;
@@ -70,7 +80,7 @@ body {
   @include page-size;
 }
 .skills-page {
-  background-color:$main-background;
+  background-color: $main-background;
   flex-grow: 2;
   @include page-size;
 }
