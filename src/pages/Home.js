@@ -35,34 +35,34 @@ const Home = () => {
       <div className="projects-page" id="projects">
         <h2 className="page-heading">Projects</h2>
         <div className="project-tiles">
-          <a href="/project">
+          <a href="/project1">
             <div className="project-tile" id="project-1">
               <p>Project 1</p>
             </div>
           </a>
-          <a href="/project">
+          <a href="/project2">
             <div className="project-tile" id="project-2">
               <p>Project 2</p>
             </div>
           </a>
-          <a href="/project">
+          <a href="/project3">
             <div className="project-tile" id="project-3">
               <p>Project 3</p>
             </div>
           </a>
-          <a href="/project">
+          <a href="/project4">
             <div className="project-tile" id="project-4">
               <p>Project 4</p>
             </div>
           </a>
         </div>
       </div>
-      <div className="contact-page" id="contact">
+      {/* <div className="contact-page" id="contact">
         <h2 className="page-heading">Contact</h2>
         <a href='mailto:lkelly.laura@gmail.com'><p>Email</p></a>
         <a href='https://github.com/laurakelly1'><p>GitHub</p></a>
         <a href='https://www.linkedin.com/in/lkelly-laura/'><p>LinkedIn</p></a>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -113,14 +113,14 @@ body {
     }
   }
 }
-.contact-page {
-  background-color: $main-background;
-  @include page-size;
-  a {
-    text-decoration: none;
-    color: black;
-  }
-}
+// .contact-page {
+//   background-color: $main-background;
+//   @include page-size;
+//   a {
+//     text-decoration: none;
+//     color: black;
+//   }
+// }
 
 
 // Footer 
@@ -157,10 +157,10 @@ body {
       margin: 0;
     }
     #plan {
-      animation: footer 4s linear infinite 1s;
+      animation: footer 4s linear infinite 0s;
     }
     #create {
-      animation: footer 4s linear infinite 1.5s;
+      animation: footer 4s linear infinite 1s;
     }
     #refine {
       animation: footer 4s linear infinite 2s;
