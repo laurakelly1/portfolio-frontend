@@ -6,33 +6,33 @@ $dark-green: #596567;
 $almost-black: #182021;
 
 @mixin page-size {
-  width: 100vw;
   height: 100vh;
+  padding: 0 10%;
   .page-heading {
     padding-top: 50px;
   }
 }
 @mixin nav-bars {
   display: block;
-  flex-grow: 1;
   text-decoration: none;
   // writing-mode: vertical-rl;
-  color: white;
+  color: black;
   text-transform: uppercase;
 }
 
 body {
   background-color: $main-background;
-}
 
-.App {
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  h2 {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 200;
+  .App {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    h2 {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 200;
+    }
   }
 }
+
 .header {
   background-color: $almost-black;
   position: fixed;
@@ -43,16 +43,12 @@ body {
   }
 }
 .nav {
-  color: white;
   position: fixed;
   right: 0;
   top: 0;
-  background-color: $almost-black;
-  width: 100vw;
+  background-color: transparent;
   .navbar {
-    // height: 100vh;
     display: flex;
-    // flex-direction: column;
     margin: 0 15px 0 5px;
     a {
       @include nav-bars;
@@ -63,29 +59,58 @@ body {
 
 .home-page {
   background-color: $main-background;
-  flex-grow: 2;
   @include page-size;
   display: flex;
   flex-direction: column;
+  .home-block {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      font-size: 5rem;
+      margin: 0;
+    }
+    h3 {
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
 }
-
 .about-page {
   background-color: $main-background;
-  flex-grow: 2;
   @include page-size;
+  .profile-content {
+    display: flex;
+    flex-flow: row;
+    .profile-image {
+      background-color: #596567;
+      width: 70vw;
+      height: 40vh;
+      border-radius: 50% 50% 0% 0%;
+      margin-left: 20px;
+    }
+    .profile-text {
+      text-align: start;
+      padding: 10px;
+    }
+  }
 }
 .projects-page {
   background-color: $main-background;
-  flex-grow: 2;
   @include page-size;
-}
-.skills-page {
-  background-color: $main-background;
-  flex-grow: 2;
-  @include page-size;
+  .project-tiles {
+    display: flex;
+    justify-content: center;
+    .project-tile {
+      background-color: #73877b;
+      width: 20vw;
+      height: 40vh;
+      margin: 10px;
+    }
+  }
 }
 .contact-page {
   background-color: $main-background;
-  flex-grow: 2;
   @include page-size;
 }

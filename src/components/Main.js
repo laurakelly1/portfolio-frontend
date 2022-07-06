@@ -1,17 +1,13 @@
-import { Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import { Route, Routes } from "react-router";
 import Home from "../pages/Home";
+import Project from "../pages/Project";
 
 const Main = () => {
-  const location = useLocation();
   return (
-    <div>
-      <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
-          <Route exact path="/" element={<Home />} />
-        </Routes>
-      </AnimatePresence>
-    </div>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/project" element={<Project />} />
+    </Routes>
   );
 };
 
