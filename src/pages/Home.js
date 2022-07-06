@@ -15,8 +15,6 @@ const Home = () => {
             <h3>
               I'm a full-stack developer with a deep appreciation for the design
               process.
-              <br />
-              Plan, create, refine!
             </h3>
             <p>
               With formal training in Pure Mathematics and two years of
@@ -61,9 +59,9 @@ const Home = () => {
       </div>
       <div className="contact-page" id="contact">
         <h2 className="page-heading">Contact</h2>
-        <p>Email</p>
-        <p>GitHub</p>
-        <p>LinkedIn</p>
+        <a href='mailto:lkelly.laura@gmail.com'><p>Email</p></a>
+        <a href='https://github.com/laurakelly1'><p>GitHub</p></a>
+        <a href='https://www.linkedin.com/in/lkelly-laura/'><p>LinkedIn</p></a>
       </div>
     </div>
   );

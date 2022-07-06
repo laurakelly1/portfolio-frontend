@@ -1,28 +1,35 @@
 // Colors
 $main-background: snow;
 $dark-orange: #cf8c70;
-$light-green: #73877b;
+$light-green: #77887e;
 $dark-green: #596567;
 $almost-black: #182021;
 
+// Mixins
 @mixin page-size {
   height: 100vh;
   padding: 0 10%;
-  .page-heading {
-    padding-top: 50px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @mixin nav-bars {
   display: block;
   text-decoration: none;
-  // writing-mode: vertical-rl;
   color: black;
   text-transform: uppercase;
 }
 
+// Keyframes
+@keyframes footer {
+  0% { color: $almost-black }
+  50% { color: $main-background }
+  100% { color: $almost-black }
+}
+
 body {
   background-color: $main-background;
-
+  margin: 0;
   .App {
     text-align: center;
     font-family: "Lato", sans-serif;
@@ -33,15 +40,6 @@ body {
   }
 }
 
-.header {
-  background-color: $almost-black;
-  position: fixed;
-  width: 100vw;
-  h1 {
-    color: white;
-    margin: 0;
-  }
-}
 .nav {
   position: fixed;
   right: 0;
@@ -54,8 +52,13 @@ body {
       @include nav-bars;
       padding: 10px;
     }
+    a:active{
+      font-weight: bold;
+    }
   }
 }
+
+// Main pages
 
 .home-page {
   background-color: $main-background;
@@ -113,4 +116,60 @@ body {
 .contact-page {
   background-color: $main-background;
   @include page-size;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
+// Footer 
+
+.footer {
+  background-color: $almost-black;
+  color: white;
+  display: flex;
+  text-align: start;
+  width: 100vw;
+  .footer-c1 {
+    flex-grow: 1;
+    font-size: 40px;
+    padding: 0 20px;
+    h3{
+      margin: 30px;}
+  }
+  .footer-c2, .footer-c3 {
+    flex-grow: 1;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .footer-c4 {
+    flex-grow: 1;
+    margin: 30px 0;
+    p {
+      display: flex;
+      flex-flow: row wrap;
+      font-size: 30px;
+      padding: 0 20px;
+      width: 150px;
+      margin: 0;
+    }
+    #plan {
+      animation: footer 4s linear infinite 1s;
+    }
+    #create {
+      animation: footer 4s linear infinite 1.5s;
+    }
+    #refine {
+      animation: footer 4s linear infinite 2s;
+    }
+  }
+}
+
+// Project pages
+
+.project-main {
+  min-height: 100vw;
 }
