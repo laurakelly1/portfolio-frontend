@@ -2,7 +2,7 @@ import { HashLink as Link} from "react-router-hash-link";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id='contact'>
       <div className="footer-c1">
         <h3>Laura <br/>Kelly</h3>
       </div>

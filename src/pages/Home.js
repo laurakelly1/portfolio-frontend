@@ -1,6 +1,12 @@
+import { motion } from "framer-motion";
+
 const Home = () => {
   return (
-    <div className="main">
+    <motion.div className="main"
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 2 }}
+  >
       <div className="home-page">
         <div className="home-block">
           <h2 className="page-heading">Laura Kelly</h2>
@@ -35,24 +41,24 @@ const Home = () => {
       <div className="projects-page" id="projects">
         <h2 className="page-heading">Projects</h2>
         <div className="project-tiles">
-          <a href="/project1">
+          <a href="/applied">
             <div className="project-tile" id="project-1">
-              <p>Project 1</p>
+              <p>Applied</p>
             </div>
           </a>
-          <a href="/project2">
+          <a href="/flowerbox">
             <div className="project-tile" id="project-2">
-              <p>Project 2</p>
+              <p>Flowerbox</p>
             </div>
           </a>
-          <a href="/project3">
+          <a href="/plantanullius">
             <div className="project-tile" id="project-3">
-              <p>Project 3</p>
+              <p>PLanta Nullius</p>
             </div>
           </a>
-          <a href="/project4">
+          <a href="/stillwall">
             <div className="project-tile" id="project-4">
-              <p>Project 4</p>
+              <p>Still Wall</p>
             </div>
           </a>
         </div>
@@ -63,7 +69,7 @@ const Home = () => {
         <a href='https://github.com/laurakelly1'><p>GitHub</p></a>
         <a href='https://www.linkedin.com/in/lkelly-laura/'><p>LinkedIn</p></a>
       </div> */}
-    </div>
+    </motion.div>
   );
 };
 
