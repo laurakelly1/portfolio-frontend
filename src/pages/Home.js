@@ -14,11 +14,11 @@ const Home = () => {
         </div>
       </div>
       <div className="about-page" id="about">
-        <h2 className="page-heading">Based in Norfolk, Virginia</h2>
+        <h2 className="about-page-heading">Based in Norfolk, Virginia</h2>
         <div className="profile-content">
           <div className="profile-image"></div>
           <div className="profile-text">
-            <h3>
+            <h3 className="about-page-subheading">
               I'm a full-stack developer with a deep appreciation for the design
               process.
             </h3>
