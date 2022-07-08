@@ -3,6 +3,9 @@ const Nav = () => {
   return (
     <div className="nav">
       <div className="navbar">
+        <Link to='/#home' smooth>
+          Home
+        </Link>
         <Link to="/#about" smooth>
           About
         </Link>
