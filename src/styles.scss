@@ -68,12 +68,12 @@ body {
 // Main pages
 
 .home-page {
-  background-color: $main-background;
   @include page-size;
   display: flex;
   flex-direction: column;
   .home-block {
-    height: 100%;
+    background-color: $light-green;
+    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,11 +89,10 @@ body {
   }
 }
 .about-page {
-  background-color: $main-background;
   @include page-size;
   .about-page-heading {
     font-size: 40px;
-    transform:  translateX(2em);
+    transform: translateX(2em);
   }
   .profile-content {
     display: flex;
@@ -124,7 +123,6 @@ body {
   }
 }
 .projects-page {
-  background-color: $main-background;
   @include page-size;
   .project-tiles {
     display: flex;
@@ -134,6 +132,29 @@ body {
       width: 20vw;
       height: 40vh;
       margin: 10px;
+    }
+  }
+}
+.skills-page {
+  @include page-size;
+  .skill-total-block {
+    background-color: $main-background;
+  }
+  .skills-page-heading {
+    color: $almost-black;
+  }
+  .skill-lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+    .skills-block {
+      width: 25vw;
+      h3 {
+        color: $almost-black;
+        font-weight: bold;
+        padding: 0 10px;
+      }
     }
   }
 }
@@ -152,8 +173,10 @@ body {
   background-color: $almost-black;
   color: white;
   display: flex;
+  align-items: center;
   text-align: start;
   width: 100vw;
+  height: 30vh;
   .footer-c1 {
     flex-grow: 1;
     font-size: 40px;
