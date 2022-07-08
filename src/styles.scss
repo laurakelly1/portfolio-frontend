@@ -82,7 +82,7 @@ body {
     flex-direction: column;
     justify-content: center;
     color: $almost-black;
-    border-radius: 10% 0 10% 0 ;
+    border-radius: 10% 0 10% 0;
     h2 {
       font-size: 5rem;
       margin: 0;
@@ -172,7 +172,6 @@ body {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/planta-icon.png?raw=true");
       background-color: #f1f8e9;
       @include projects;
-      
     }
     #project-4:hover {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/stillwall-icon.png?raw=true");
@@ -182,9 +181,17 @@ body {
   }
 }
 .skills-page {
-  @include page-size;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .skill-total-block {
     background-color: $main-background;
+    border-bottom: 100px solid $light-green;
+    hr {
+      width: 100%;
+      border: 1px solid $light-green;
+    }
   }
   .skills-page-heading {
     color: $almost-black;
@@ -263,9 +270,24 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: start;
+  button {
+    background-color: $main-background;
+    color: $almost-black;
+    border: 1px solid $light-green;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    margin-right: 10px;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: $light-green;
+  }
   .project-images {
     display: flex;
-    align-items: center;
     gap: 10px;
     .mobile {
       height: 40vw;

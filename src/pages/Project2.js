@@ -15,44 +15,65 @@ const Project2 = () => {
         },
       }}
     >
-      <h2>Flowerbox</h2>
-      <h3>
-        Technologies: React JS, SASS, CSS Animations, Google Fonts, IonIcons
-      </h3>
-      <h3>Role: Frontend Developer</h3>
-      <a href="https://flower-box.netlify.app/" target="_blank">
-        <button>Live Site</button>
-      </a>
-      <a href="https://github.com/laurakelly1/flowerbox" target="_blank">
-        <button>GitHub</button>
-      </a>
-      <p>Frontend florist website with animation</p>
-      <p>
-        Implemented pages and components to efficiently built the website in
-        React JS. Styled using SASS and CSS animations, including a bounce
-        effect on the title.
-      </p>
-      <p>
-        Fully responsive and interactive, designed with the user's experience in
-        mind.
-      </p>
-      <div className="project-images">
-        <img
-          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-d-1.png?raw=true"
-          alt="Desktop screenshot"
-          className="desktop"
-        ></img>
-        <div className="mobile-images">
-          <img
-            src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-m-1.png?raw=true"
-            alt="Mobile screenshots"
-            className="mobile"
-          ></img>
-        </div>
+      <div className="previous">
+        <Link to="/applied">Previous Project</Link>
       </div>
-      <Link to="/applied">Previous Project</Link>
-      <br />
-      <Link to="/plantanullius">Next Project</Link>
+      <div className="project-text">
+        <h2>Flowerbox</h2>
+        <h3>
+          Technologies: React JS, SASS, CSS Animations, Google Fonts, IonIcons
+        </h3>
+        <h3>Role: Frontend Developer</h3>
+        <div className="buttons">
+          <a
+            href="https://flower-box.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button>Live Site</button>
+          </a>
+          <a
+            href="https://github.com/laurakelly1/flowerbox"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button>GitHub</button>
+          </a>
+        </div>
+        <p>Frontend florist website with animation</p>
+        <p>
+          Implemented pages and components to efficiently built the website in
+          React JS. Styled using SASS and CSS animations, including a bounce
+          effect on the title.
+        </p>
+        <p>
+          Fully responsive and interactive, designed with the user's experience
+          in mind.
+        </p>
+        <a
+          href="https://flower-box.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="project-images">
+            <img
+              src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-d-1.png?raw=true"
+              alt="Desktop screenshot"
+              className="desktop"
+            ></img>
+            <div className="mobile-images">
+              <img
+                src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-m-1.png?raw=true"
+                alt="Mobile screenshots"
+                className="mobile"
+              ></img>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div className="next">
+        <Link to="/plantanullius">Next Project</Link>
+      </div>
     </motion.div>
   );
 };

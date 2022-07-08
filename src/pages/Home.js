@@ -9,7 +9,7 @@ const Home = () => {
       transition={{ duration: 2 }}
     >
       <div className="home-page" id="home">
-        <div className="home-block" >
+        <div className="home-block">
           <h2 className="page-heading">Laura Kelly</h2>
           <h3 className="sub-heading">Creative Developer</h3>
         </div>
@@ -59,6 +59,7 @@ const Home = () => {
       <div className="skills-page" id="skills">
         <div className="skill-total-block">
           <h2 className="skills-page-heading">Skills</h2>
+          <hr />
           <div className="skill-lists">
             <div className="skills-block">
               <h3>Languages</h3>
