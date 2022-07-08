@@ -40,10 +40,20 @@ const Project4 = () => {
         create a modern search bar. Employed Git control during the production
         of the application with frequent commits until deployment.
       </p>
-      <img alt="desktop screenshot"></img>
-      <br />
-      <img alt="Mobile screenshots"></img>
-      <br />
+      <div className="project-images">
+        <img
+          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/stillwall-d-1.png?raw=true"
+          alt="Desktop screenshot"
+          className="desktop"
+        ></img>
+        <div className="mobile-images">
+        <img
+          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/stillwall-m-1.png?raw=true"
+          alt="Mobile screenshots"
+          className="mobile"
+        ></img>
+        </div>
+      </div>
       <Link to="/plantanullius">Previous Project</Link>
     </motion.div>
   );

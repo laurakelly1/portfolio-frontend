@@ -34,10 +34,20 @@ const Project3 = () => {
         and clear code. Implemented models on MongoDB and applied functions to
         the data using Mongoose. Styled with CSS and Materialize to reflect a
         modern virtual storefront.</p>
-      <img alt="desktop screenshot"></img>
-      <br />
-      <img alt="Mobile screenshots"></img>
-      <br />
+        <div className="project-images">
+        <img
+          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/applied-d-1.png?raw=true"
+          alt="Desktop screenshot"
+          className="desktop"
+        ></img>
+        <div className="mobile-images">
+        <img
+          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/applied-m-1.png?raw=true"
+          alt="Mobile screenshots"
+          className="mobile"
+        ></img>
+        </div>
+      </div>
       <Link to="/flowerbox">Previous Project</Link>
       <br />
       <Link to="/stillwall">Next Project</Link>

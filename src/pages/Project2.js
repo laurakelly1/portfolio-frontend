@@ -30,14 +30,26 @@ const Project2 = () => {
       <p>
         Implemented pages and components to efficiently built the website in
         React JS. Styled using SASS and CSS animations, including a bounce
-        effect on the title. 
+        effect on the title.
       </p>
-      <p>Fully responsive and interactive, designed with the
-        user's experience in mind.</p>
-      <img alt="desktop screenshot"></img>
-      <br />
-      <img alt="Mobile screenshots"></img>
-      <br />
+      <p>
+        Fully responsive and interactive, designed with the user's experience in
+        mind.
+      </p>
+      <div className="project-images">
+        <img
+          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-d-1.png?raw=true"
+          alt="Desktop screenshot"
+          className="desktop"
+        ></img>
+        <div className="mobile-images">
+          <img
+            src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-m-1.png?raw=true"
+            alt="Mobile screenshots"
+            className="mobile"
+          ></img>
+        </div>
+      </div>
       <Link to="/applied">Previous Project</Link>
       <br />
       <Link to="/plantanullius">Next Project</Link>
