@@ -15,7 +15,7 @@ const Project1 = () => {
         },
       }}
     >
-      <h1>Applied</h1>
+      <h2>Applied</h2>
       <h3>
         Technologies: React JS, Express JS, HTML/CSS, JavaScript, MongoDB and
         Mongoose, Heroku, Netlify

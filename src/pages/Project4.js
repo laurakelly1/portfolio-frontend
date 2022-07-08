@@ -15,9 +15,9 @@ const Project4 = () => {
         },
       }}
     >
-      <h1>Still Wall</h1>
-      <h3>Technologies</h3>
-      <h3>Role</h3>
+      <h2>Still Wall</h2>
+      <h3>Technologies: HTML5, CSS3, JavaScript, jQuery, Google Fonts, Art Institute of Chicago, Font Awesome</h3>
+      <h3>Role: Frontend Developer</h3>
       <a href="https://laurakelly1.github.io/wall-art-app/" target="_blank">
         <button>Live Site</button>
       </a>

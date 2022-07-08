@@ -15,7 +15,7 @@ const Project3 = () => {
         },
       }}
     >
-      <h1>Planta Nullius</h1>
+      <h2>Planta Nullius</h2>
       <h3>Technologies: Express JS, Node JS, CSS3, JavaScript, Materialize, Google Fonts, MongoDB and Mongoose, Heroku</h3>
       <h3>Role: Full Stack Developer</h3>
       <a href="https://planta-nullius.herokuapp.com/" target="_blank">
@@ -36,13 +36,13 @@ const Project3 = () => {
         modern virtual storefront.</p>
         <div className="project-images">
         <img
-          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/applied-d-1.png?raw=true"
+          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/planta-d-1.png?raw=true"
           alt="Desktop screenshot"
           className="desktop"
         ></img>
         <div className="mobile-images">
         <img
-          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/applied-m-1.png?raw=true"
+          src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/planta-m-1.png?raw=true"
           alt="Mobile screenshots"
           className="mobile"
         ></img>

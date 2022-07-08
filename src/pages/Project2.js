@@ -15,7 +15,7 @@ const Project2 = () => {
         },
       }}
     >
-      <h1>Flowerbox</h1>
+      <h2>Flowerbox</h2>
       <h3>
         Technologies: React JS, SASS, CSS Animations, Google Fonts, IonIcons
       </h3>
