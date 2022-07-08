@@ -44,22 +44,18 @@ const Home = () => {
         <div className="project-tiles">
           <a href="/applied">
             <div className="project-tile" id="project-1">
-              <p>Applied</p>
             </div>
           </a>
           <a href="/flowerbox">
             <div className="project-tile" id="project-2">
-              <p>Flowerbox</p>
             </div>
           </a>
           <a href="/plantanullius">
             <div className="project-tile" id="project-3">
-              <p>PLanta Nullius</p>
             </div>
           </a>
           <a href="/stillwall">
             <div className="project-tile" id="project-4">
-              <p>Still Wall</p>
             </div>
           </a>
         </div>

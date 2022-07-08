@@ -19,7 +19,11 @@ $almost-black: #182021;
   color: black;
   text-transform: uppercase;
 }
-
+@mixin projects {
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 // Keyframes
 @keyframes footer {
   0% {
@@ -128,37 +132,29 @@ body {
     display: flex;
     justify-content: center;
     .project-tile {
-      background-color: #73877b;
       width: 20vw;
       height: 40vh;
       margin: 10px;
     }
     #project-1 {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/applied-icon.png?raw=true");
-      background-size: 90%;
-      background-repeat: no-repeat;
-      background-position: center;
+      background-color: #7bbde2;
+      @include projects;
     }
     #project-2 {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-icon.png?raw=true");
-      background-size: 90%;
-      background-repeat: no-repeat;
-      background-position: center;
       background-color: #f9dde0;
+      @include projects;      
     }
     #project-3 {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/planta-icon.png?raw=true");
-      background-size: 90%;
-      background-repeat: no-repeat;
-      background-position: center;
       background-color: #f1f8e9;
+      @include projects;
     }
     #project-4 {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/stillwall-icon.png?raw=true");
-      background-size: 90%;
-      background-repeat: no-repeat;
-      background-position: center;
       background-color: #8aaae5;
+      @include projects;
     }
   }
 }
