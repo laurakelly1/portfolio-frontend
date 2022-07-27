@@ -265,17 +265,24 @@ body {
 // Project pages
 
 .project-main {
-  padding: 2% 10%;
+  padding: 2% 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: start;
-  .next, .previous {
+  .next,
+  .previous {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 15px;
-    font-size: 20px;
+    margin: 0 2%;
+    font-size: 25px;
+    i {
+      color: $almost-black;
+    }
+    i:hover {
+      color: $light-green;
+    }
   }
   button {
     background-color: $main-background;
