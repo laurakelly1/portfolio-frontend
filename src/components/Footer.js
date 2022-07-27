@@ -17,8 +17,8 @@ const Footer = () => {
         <Link to="/#projects" smooth>
           <p>Projects</p>
         </Link>
-        <Link to="/#contact" smooth>
-          <p>Contact</p>
+        <Link to="/#skills" smooth>
+          <p>Skills</p>
         </Link>
       </div>
       <div className="footer-c3">

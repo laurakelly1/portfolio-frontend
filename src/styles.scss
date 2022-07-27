@@ -454,3 +454,17 @@ body {
     }
   }
 }
+
+
+@media only screen and (max-width: 768px){
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    .footer-c2, .footer-c1,
+  .footer-c3, .footer-c4 {
+    width: 50%
+  }
+  }
+}
