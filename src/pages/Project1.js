@@ -15,6 +15,7 @@ const Project1 = () => {
         },
       }}
     >
+      <div className="previous"></div>
       <div className="project-text">
         <h2>Applied</h2>
         <h3>
