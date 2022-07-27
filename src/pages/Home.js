@@ -10,8 +10,39 @@ const Home = () => {
     >
       <div className="home-page" id="home">
         <div className="home-block">
-          <h2 className="page-heading">Laura Kelly</h2>
-          <h3 className="sub-heading">Creative Developer</h3>
+          <div className="page-heading">
+            <div className="bounce-title">
+              <h2 className="l">L</h2>
+              <h2 className="a">a</h2>
+              <h2 className="u">u</h2>
+              <h2 className="r">r</h2>
+              <h2 className="a2">a&nbsp;</h2>
+              <h2 className="k">K</h2>
+              <h2 className="e">e</h2>
+              <h2 className="l2">l</h2>
+              <h2 className="l3">l</h2>
+              <h2 className="y">y</h2>
+            </div>
+          </div>
+          <div className="sub-heading">
+            <h3 className="c">C</h3>
+            <h3 className="r2">r</h3>
+            <h3 className="e2">e</h3>
+            <h3 className="a3">a</h3>
+            <h3 className="t">t</h3>
+            <h3 className="i">i</h3>
+            <h3 className="v">v</h3>
+            <h3 className="e3">e&nbsp;</h3>
+            <h3 className="d">D</h3>
+            <h3 className="e4">e</h3>
+            <h3 className="v2">v</h3>
+            <h3 className="e5">e</h3>
+            <h3 className="l4">l</h3>
+            <h3 className="o">o</h3>
+            <h3 className="p">p</h3>
+            <h3 className="e6">e</h3>
+            <h3 className="r3">r</h3>
+          </div>
         </div>
       </div>
       <div className="about-page" id="about">
@@ -79,10 +110,9 @@ const Home = () => {
             <div className="skills-block">
               <h3>Libraries</h3>
               <p>jQuery</p>
+              <p>Material UI</p>
               <p>Materialize</p>
               <p>Bootstrap</p>
-              <p>Bcrypt</p>
-              <p>Skeleton</p>
               <p>SASS</p>
             </div>
             <div className="skills-block">
