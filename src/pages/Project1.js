@@ -72,7 +72,7 @@ const Project1 = () => {
         </a>
       </div>
       <div className="next">
-        <Link to="/flowerbox">Next Project</Link>
+        <Link to="/flowerbox"><i className="fa-solid fa-angles-right"></i></Link>
       </div>
     </motion.div>
   );

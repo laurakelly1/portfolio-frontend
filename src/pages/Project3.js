@@ -16,7 +16,7 @@ const Project3 = () => {
       }}
     >
       <div className="previous">
-        <Link to="/flowerbox">Previous Project</Link>
+        <Link to="/flowerbox"><i className="fa-solid fa-angles-left"></i></Link>
       </div>
       <div className="project-text">
         <h2>Planta Nullius</h2>
@@ -76,7 +76,7 @@ const Project3 = () => {
         </a>
       </div>
       <div className="next">
-        <Link to="/stillwall">Next Project</Link>
+        <Link to="/stillwall"><i className="fa-solid fa-angles-right"></i></Link>
       </div>
     </motion.div>
   );

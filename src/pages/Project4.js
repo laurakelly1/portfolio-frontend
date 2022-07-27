@@ -16,7 +16,7 @@ const Project4 = () => {
       }}
     >
       <div className="previous">
-        <Link to="/plantanullius">Previous Project</Link>
+        <Link to="/plantanullius"><i className="fa-solid fa-angles-left"></i></Link>
       </div>
       <div className="project-text">
         <h2>Still Wall</h2>
