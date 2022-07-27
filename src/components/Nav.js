@@ -3,7 +3,7 @@ const Nav = () => {
   return (
     <div className="nav">
       <div className="navbar">
-        <Link to='/#home' smooth>
+        <Link to="/#home" smooth>
           Home
         </Link>
         <Link to="/#about" smooth>
@@ -12,7 +12,7 @@ const Nav = () => {
         <Link to="/#projects" smooth>
           Projects
         </Link>
-        <Link to='/#skills' smooth>
+        <Link to="/#skills" smooth>
           Skills
         </Link>
         <Link to="/#contact" smooth>

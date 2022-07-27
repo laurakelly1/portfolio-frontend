@@ -182,12 +182,12 @@ body {
 }
 .skills-page {
   padding: 0 10%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 50px solid $light-green;
   .skill-total-block {
-    background-color: $main-background;
-    border-bottom: 100px solid $light-green;
     hr {
       width: 100%;
       border: 1px solid $light-green;
