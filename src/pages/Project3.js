@@ -41,7 +41,7 @@ const Project3 = () => {
             <button>GitHub</button>
           </a>
         </div>
-        <p>Ecommerce website for house plants</p>
+        <p>Ecommerce website for house plants.</p>
         <p>
           The name is Latin for 'no one's plant'. That's what we sell, plants
           without an owner!! Shop all our healthy and fresh plants and add your

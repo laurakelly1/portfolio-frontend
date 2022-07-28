@@ -39,7 +39,7 @@ const Project1 = () => {
             <button>GitHub</button>
           </a>
         </div>
-        <p>Job application tracker with easy follow-up capabilities</p>
+        <p>Job application tracker with easy follow-up capabilities.</p>
         <p>
           Full CRUD application built with a React JS frontend and Express JS
           and MongoDB backend. Built a mobile-first application for ease of use

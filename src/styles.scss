@@ -188,6 +188,7 @@ body {
   top: 0;
   background-color: transparent;
   color: $almost-black;
+  background-color: rgba(255, 250, 250, 0.1);
   .navbar {
     display: flex;
     margin: 0 15px 0 5px;
@@ -457,6 +458,7 @@ body {
   }
   .project-images {
     display: flex;
+    justify-content: center;
     gap: 10px;
     .mobile {
       height: 40vw;
@@ -498,46 +500,10 @@ body {
         margin: 10px;
         background-color: $light-green;
       }
-      #project-1 {
-        @include projects;
-        background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/applied-vector.png?raw=true");
-        border-radius: 0 0 50% 50%;
-      }
-      #project-2 {
-        @include projects;
-        background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-vector.png?raw=true");
-        background-size: 130%;
-      }
-      #project-3 {
-        @include projects;
-        background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/planta-vector.png?raw=true");
-        border-radius: 50% 50% 0 0;
-      }
-      #project-4 {
-        @include projects;
-        background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/skillwall-vector.png?raw=true");
-      }
-      #project-1:hover {
-        background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/applied-icon.png?raw=true");
-        background-color: #7bbde2;
-        @include projects;
-      }
-      #project-2:hover {
-        background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-icon.png?raw=true");
-        background-color: #f9dde0;
-        @include projects;
-      }
-      #project-3:hover {
-        background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/planta-icon.png?raw=true");
-        background-color: #f1f8e9;
-        @include projects;
-      }
-      #project-4:hover {
-        background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/stillwall-icon.png?raw=true");
-        background-color: #8aaae5;
-        @include projects;
-      }
     }
+  }
+  .project-main {
+    padding: 7% 0;
   }
   .footer {
     display: flex;

@@ -43,7 +43,7 @@ const Project4 = () => {
             <button>GitHub</button>
           </a>
         </div>
-        <p>Test-driving art on your living room wall</p>
+        <p>Test-driving art on your living room wall.</p>
         <p>
           There are currently no artworks hanging in my home! Along with the
           interior design commitment issues I have, I struggled to imagine the

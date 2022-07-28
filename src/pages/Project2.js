@@ -40,7 +40,7 @@ const Project2 = () => {
             <button>GitHub</button>
           </a>
         </div>
-        <p>Frontend florist website with animation</p>
+        <p>Frontend florist website with animation.</p>
         <p>
           Implemented pages and components to efficiently built the website in
           React JS. Styled using SASS and CSS animations, including a bounce
