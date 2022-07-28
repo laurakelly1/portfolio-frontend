@@ -367,7 +367,7 @@ body {
     font-size: 40px;
     padding: 0 20px;
     h3 {
-      margin: 30px;
+      margin: 0 30px;
     }
   }
   .footer-c2,
@@ -464,7 +464,16 @@ body {
     height: 100%;
     .footer-c2, .footer-c1,
   .footer-c3, .footer-c4 {
-    width: 50%
+    width: 80%;
+  }
+  .footer-c1 {
+    display: none;
+  }
+  #plan, #create, #refine {
+    margin: 0 auto;
+    width: auto;
+    padding: 0;
+    text-align: center;
   }
   }
 }
