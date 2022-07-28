@@ -15,7 +15,9 @@ const Project1 = () => {
         },
       }}
     >
-      <div className="previous"></div>
+      <div className="previous">
+        <Link to="/projectforward"><i className="fa-solid fa-angles-left"></i></Link>
+      </div>
       <div className="project-text">
         <h2>Applied</h2>
         <h3>
@@ -32,7 +34,7 @@ const Project1 = () => {
             <button>Live Site</button>
           </a>
           <a
-            href="https://github.com/peterkimm/applied_frontend"
+            href="https://github.com/laurakelly1/applied_frontend"
             target="_blank"
             rel="noreferrer"
           >
