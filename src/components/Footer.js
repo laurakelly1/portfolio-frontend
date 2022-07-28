@@ -10,33 +10,34 @@ const Footer = () => {
       <div className="footer-c2">
         <h3>Explore the site</h3>
         <Link to="/#about" smooth>
-          <p>About</p>
+          <p className="grow">About</p>
         </Link>
         <Link to="/#projects" smooth>
-          <p>Projects</p>
+          <p className="grow">Projects</p>
         </Link>
         <Link to="/#skills" smooth>
-          <p>Skills</p>
+          <p className="grow">Skills</p>
         </Link>
       </div>
       <div className="footer-c3">
         <h3>Connect</h3>
         <a href="mailto:lkelly.laura@gmail.com">
-          <p>Email</p>
+          <p className="grow">Email</p>
         </a>
         <a
           href="https://github.com/laurakelly1"
           target="_blank"
           rel="noreferrer"
         >
-          <p>GitHub</p>
+          <p className="grow">GitHub</p>
         </a>
         <a
           href="https://www.linkedin.com/in/lkelly-laura/"
           target="_blank"
           rel="noreferrer"
+          
         >
-          <p>LinkedIn</p>
+          <p className="grow">LinkedIn</p>
         </a>
       </div>
       <div className="footer-c4">
