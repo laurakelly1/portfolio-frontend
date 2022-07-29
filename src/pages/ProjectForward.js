@@ -44,7 +44,7 @@ const ProjectForward = () => {
         At Project Forward, we've designed the perfect app to log all your creative tools. Never forget a color code again!
         </p>
         <p>
-          I acted as 
+           
         </p>
         <a
           href="https://project-forward.herokuapp.com/"
@@ -53,13 +53,13 @@ const ProjectForward = () => {
         >
           <div className="project-images">
             <img
-              src="https://github.com/laurakelly1/project-forward/raw/main/main_app/static/images/screenshots.jpg?raw=true"
+              src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/projectforward-d-1.png?raw=true"
               alt="Desktop screenshot"
               className="desktop"
             ></img>
             <div className="mobile-images">
               <img
-                src=""
+                src="https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/projectforward-m-1.png?raw=true"
                 alt="Mobile screenshots"
                 className="mobile"
               ></img>
