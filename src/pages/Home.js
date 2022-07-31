@@ -45,7 +45,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="about-page" id="about">
+      <div
+        className="about-page"
+        id="about"
+      >
         <h2 className="about-page-heading">Based in Norfolk, Virginia</h2>
         <div className="profile-content">
           <div className="profile-image"></div>
@@ -70,7 +73,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="projects-page" id="projects">
+      <div
+        className="projects-page"
+        id="projects"
+      >
         <h2 className="page-heading">Projects</h2>
         <div className="project-tiles">
           <a href="/applied">
@@ -87,7 +93,10 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="skills-page" id="skills">
+      <div
+        className="skills-page"
+        id="skills"
+      >
         <div className="skill-total-block">
           <h2 className="skills-page-heading">Skills</h2>
           <hr />
