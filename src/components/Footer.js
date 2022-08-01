@@ -1,4 +1,5 @@
 import { HashLink as Link } from "react-router-hash-link";
+import Pdf from "../LAURAKELLY-RESUMEPDF.pdf"
 
 const Footer = () => {
   return (
@@ -18,6 +19,9 @@ const Footer = () => {
         <Link to="/#skills" smooth>
           <p className="grow">Skills</p>
         </Link>
+        <a href={Pdf}>
+          <p className="grow" target='_blank'>Resume</p>
+        </a>
       </div>
       <div className="footer-c3">
         <h3>Connect</h3>
