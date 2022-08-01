@@ -69,7 +69,6 @@ $almost-black: #182021;
   text-transform: uppercase;
 }
 @mixin projects {
-  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -286,50 +285,72 @@ body {
   font-size: 40px;
   .project-tiles {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     .project-tile {
-      width: 20vw;
-      height: 40vh;
+      width: 200px;
+      height: 200px;
       margin: 10px;
       background-color: $light-green;
+    }
+    #projectforward {
+      @include projects;
+      background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/projectforward-vector.png?raw=true");
+      border-radius: 50%;
+      background-size: 80%;
     }
     #project-1 {
       @include projects;
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/applied-vector.png?raw=true");
-      border-radius: 0 0 50% 50%;
+      border-radius: 50%;
+      background-size: 70%;
     }
     #project-2 {
       @include projects;
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-vector.png?raw=true");
-      background-size: 130%;
+      border-radius: 50%;
+      background-size: 100%;
     }
     #project-3 {
       @include projects;
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/planta-vector.png?raw=true");
-      border-radius: 50% 50% 0 0;
+      border-radius: 50%;
+      background-size: 60%;
     }
     #project-4 {
       @include projects;
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/skillwall-vector.png?raw=true");
+      background-size: 60%;
+      border-radius: 50%;
+    }
+    #projectforward:hover {
+      background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/projectforward-icon.png?raw=true");
+      background-color: #b0bec5;
+      background-size: 90%;
+      @include projects;
     }
     #project-1:hover {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/applied-icon.png?raw=true");
       background-color: #7bbde2;
+      background-size: 70%;
       @include projects;
     }
     #project-2:hover {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/flowerbox-icon.png?raw=true");
       background-color: #f9dde0;
+      background-size: 90%;
       @include projects;
     }
     #project-3:hover {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/planta-icon.png?raw=true");
       background-color: #f1f8e9;
+      background-size: 90%;
       @include projects;
     }
     #project-4:hover {
       background-image: url("https://github.com/laurakelly1/portfolio-frontend/blob/main/src/images/stillwall-icon.png?raw=true");
       background-color: #8aaae5;
+      background-size: 90%;
       @include projects;
     }
   }
@@ -499,8 +520,8 @@ body {
       flex-flow: row wrap;
       justify-content: center;
       .project-tile {
-        width: 30vw;
-        height: 30vh;
+        width: 160px;
+        height: 160px;
         margin: 10px;
         background-color: $light-green;
       }
