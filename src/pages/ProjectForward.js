@@ -39,12 +39,20 @@ const ProjectForward = () => {
             <button>GitHub</button>
           </a>
         </div>
-        <p>Web-design companion to help you track color codes and other design data</p>
         <p>
-        At Project Forward, we've designed the perfect app to log all your creative tools. Never forget a color code again!
+          Web-design companion to help you track color codes and other design
+          data
         </p>
         <p>
-           
+          At Project Forward, we've designed the perfect companion app to log
+          all your creative color choices.
+        </p>
+        <p>
+          Full CRUD application built with Python, Django, and PostgreSQL.
+          Utilized Materialize stylesheet for elegant designs and intuitive
+          uses. Allows the user to collect and store all relevant hex codes to
+          the app, a color scheme, and a project. The scheduled update will
+          include the ability to save fonts using the Google Fonts API.
         </p>
         <a
           href="https://project-forward.herokuapp.com/"
