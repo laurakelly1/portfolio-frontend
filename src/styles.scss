@@ -357,10 +357,11 @@ body {
 }
 .skills-page {
   padding: 0 10%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20px;
   border-bottom: 50px solid $light-green;
   .skill-total-block {
     hr {
@@ -501,6 +502,7 @@ body {
 @media only screen and (max-width: 768px) {
   .about-page {
     padding: 10%;
+    height: 100%;
     .about-page-heading {
       transform: translateX(0);
     }
@@ -516,6 +518,7 @@ body {
     }
   }
   .projects-page {
+    height: 100%;
     .project-tiles {
       flex-flow: row wrap;
       justify-content: center;
@@ -529,6 +532,9 @@ body {
   }
   .project-main {
     padding: 7% 0;
+  }
+  .skills-page {
+    height: 100%;
   }
   .footer {
     display: flex;
