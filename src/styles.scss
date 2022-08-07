@@ -500,6 +500,22 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .nav {
+    left: 0;
+    top: 0;
+    .navbar {
+      display: flex;
+      margin: 0 15px 0 5px;
+      a {
+        @include nav-bars;
+        padding: 5px;
+        font-size: 13px;
+      }
+      a:active {
+        font-weight: bold;
+      }
+    }
+  }
   .about-page {
     padding: 10%;
     height: 100%;

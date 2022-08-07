@@ -1,4 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
+import Pdf from "../LAURAKELLY-RESUMEPDF.pdf"
+
 const Nav = () => {
   return (
     <div className="nav">
@@ -18,6 +20,9 @@ const Nav = () => {
         <Link to="/#contact" smooth>
           Contact
         </Link>
+        <a href={Pdf} target="_blank">
+          Resume
+        </a>
       </div>
     </div>
   );

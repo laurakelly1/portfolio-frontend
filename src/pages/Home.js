@@ -124,7 +124,7 @@ const Home = () => {
               <p>Mongoose</p>
               <p>PostgreSQL</p>
               <p>AWS S3</p>
-              <p>Google OAuth</p>
+              <p>Google Firebase</p>
             </div>
             <div className="skills-block">
               <h3>Deployment</h3>
@@ -145,3 +145,4 @@ const Home = () => {
 };
 
 export default Home;
+
