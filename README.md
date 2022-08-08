@@ -2,4 +2,8 @@
 
 Learn about me, see past projects, and reach out and connect!
 
-Building in progress
+## Getting started
+Check out my porfolio
+<a href='https://laurakelly.netlify.app/'>
+here!
+</a>
