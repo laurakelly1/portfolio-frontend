@@ -20,7 +20,7 @@ const Nav = () => {
         <Link to="/#contact" smooth>
           Contact
         </Link>
-        <a href={Pdf} target="_blank">
+        <a href={Pdf} target="_blank" rel="noreferrer">
           Resume
         </a>
       </div>
