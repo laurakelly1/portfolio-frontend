@@ -252,7 +252,6 @@ body {
       @include subtitle-animation;
       animation: title-box 1s ease-in-out 0s;
     }
-
     h3 {
       font-size: 2rem;
       margin: 0;
@@ -265,7 +264,6 @@ body {
   visibility: visible;
   @include page-size;
   .about-page-heading {
-    font-size: 40px;
     transform: translateX(2em);
   }
   .profile-content {
@@ -299,7 +297,9 @@ body {
 
 .projects-page {
   @include page-size;
-  font-size: 40px;
+  h2 {
+    margin: 40px;
+  }
   .project-tiles {
     display: flex;
     flex-flow: row wrap;
@@ -373,12 +373,7 @@ body {
   }
 }
 .skills-page {
-  padding: 0 10%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 20px;
+  @include page-size;
   border-bottom: 50px solid $light-green;
   .skill-total-block {
     hr {
@@ -388,13 +383,12 @@ body {
   }
   .skills-page-heading {
     color: $almost-black;
-    font-size: 40px;
   }
   .skill-lists {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-
+    padding-bottom: 40px;
     .skills-block {
       width: 25vw;
       h3 {
@@ -412,14 +406,18 @@ body {
   background-color: $almost-black;
   color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   text-align: start;
   width: 100vw;
   height: 30vh;
   .footer-c1 {
     flex-grow: 1;
     font-size: 40px;
-    padding: 0 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h3 {
       margin: 0 30px;
     }
@@ -565,9 +563,6 @@ body {
   }
   .project-main {
     padding: 7% 0;
-  }
-  .skills-page {
-    height: 100%;
   }
   .footer {
     display: flex;
