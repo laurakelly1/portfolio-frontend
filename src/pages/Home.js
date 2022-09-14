@@ -10,7 +10,7 @@ function FadeInSection(props) {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
     observer.observe(domRef.current);
-     // eslint-disable-next-line
+    // eslint-disable-next-line
     return () => observer.unobserve(domRef.current);
   }, []);
   return (
@@ -66,7 +66,6 @@ const Home = () => {
             <h3 className="e6">e</h3>
             <h3 className="r3">r</h3>
           </div>
-          
         </div>
       </div>
       <div className="about-page" id="about">
